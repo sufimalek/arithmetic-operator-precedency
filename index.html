@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operator Precedence</title>
+    <style>
+        body {
+            background-image: url('back_1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .calculator-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /*height: 100vh; /* 100vh;*/
+            /*background-color: rgba(255, 255, 255, 0.8); /* Add transparency for better readability */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            width: 600px; /* 200px; */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .h2 {
+            font-size: 18px;
+            /* margin-bottom: 20px; */
+            color: #fff;
+        }
+        .div{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 100px;"></div>
+    <div class="calculator-container">
+        <h1>Arithmetic Operator Precedence</h1>
+        <h2>Enter an expression to evaluate</h2>
+        <form id="calculator-form">
+            <input type="text" id="expression" placeholder="Enter an expression (e.g., 2+3*4)">
+            <input type="button" onclick="calculate()" value="Calculate">
+        </form>
+        <div id="result" class="div h2"></div>
+        <div id="steps" class="div h2"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
