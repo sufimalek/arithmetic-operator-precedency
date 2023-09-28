@@ -169,7 +169,7 @@ function calculate() {
 
         for (const step of steps) {
             console.log(step);
-            stepsElement.innerHTML += `<pre class="h2">${step}</pre>`;
+            stepsElement.innerHTML += `<h2 class="h2">${step}</h2>`;
         }
 
     } catch (error) {
